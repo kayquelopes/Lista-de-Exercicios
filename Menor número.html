@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+<script>
+    // Peça para o usuário informar três números e identifique qual o menor número.
+
+    const numero1 = Number(prompt("Insira um numero."));
+    const numero2 = Number(prompt("Insira outro número"));
+    const numero3 = Number(prompt("Insira outro número"));
+    if (numero1 < numero2 && numero1 < numero3){
+        alert(`${numero1} é menor que o número ${numero2} e o número ${numero3}`);
+    }
+    else if(numero2 < numero1 && numero2 < numero3 ){
+        alert(`${numero2} é menor que o número ${numero1} e o número ${numero3}`);
+    }
+    else if (numero3 < numero1 && numero3 < numero2 ){
+        alert(`${numero3} é menor que o número ${numero1} e o número ${numero2}`);
+    } else{
+        alert(`Erro`)
+    }
+</script>

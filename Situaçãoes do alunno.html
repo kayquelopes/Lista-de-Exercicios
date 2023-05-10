@@ -1,0 +1,17 @@
+<meta charset="UTF-8">
+<script>
+    const nota1 = Number(prompt("Insira a primeira nota do trimestre"));
+    const nota2 = Number(prompt("Insira a segunda nota do trimestre"));
+    const nota3 = Number(prompt("Insira a terceira nota do trimestre"));
+    const processamento = (nota1 + nota2 + nota3) / 3;
+    const resultado = processamento.toFixed(1);
+    if (resultado <= 4 ){
+        alert(`Você está reprovado.`);
+    }
+    else if(resultado <= 6){
+        alert(`Você está em exame.`);
+    }
+    else if (resultado >= 6){
+        alert(`Você está aprovado.`);
+    }
+</script>
