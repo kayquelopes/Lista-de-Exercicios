@@ -3,16 +3,17 @@
     const n1 = Number(prompt("Insira um número").trim());
     const n2 = Number(prompt(" insira outro número").trim())
 
-    if (n1 > n2) {
-        alert(`O número ${n1} é o maior`);
-    } 
-    else if (n1 < n2) {
-        alert(`O número ${n2} é o maior`);
-    } 
-    else if (n1 == n2) {
-        alert(`Eles são iguais`);
-    } 
-    else {
+    if (isNaN(n1) == true || isNaN(n2) == true) {
         alert(`Erro`);
+    } else {
+        if (n1 > n2) {
+            alert(`O número ${n1} é o maior`);
+        }
+        else if (n1 < n2) {
+            alert(`O número ${n2} é o maior`);
+        }
+        else {
+            alert(`esse valores são iguais`)
+        }
     }
 </script>
