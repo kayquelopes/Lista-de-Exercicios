@@ -1,11 +1,11 @@
 <meta chaset="uft-8">
 <script>
-    const letra = prompt("Informe uma letra:").toLowerCase();
+    const letra = prompt("Informe uma letra:").toLowerCase().trim();
 
-if (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u") {
-  alert("A letra informada é uma vogal.");
+if (letra.length == "a" || letra.length == "e" || letra.length == "i" || letra.length == "o" || letra.length == "u") {
+  alert(`A letra ${letra}informada é uma vogal.`);
 } else {
-  alert("A letra informada é uma consoante.");
+  alert(`A letra ${letra} informada é uma consoante.`);
 }
 
 </script>

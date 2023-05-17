@@ -1,9 +1,20 @@
 <meta charset="UTF-8">
 <script>
     const idade = Number(prompt("insira a sua idade").trim())
-    if (idade>=16) {
-        alert(`Você está apto para votar`)
+
+    if (idade >= 16) {
+        alert(`Você já tem idade para votar`)
+        const titulo = prompt("Você tem título ? S ou N").toUpperCase().trim()
+        if (titulo == "S") {
+            alert(`Apto para Votar`)
+        } else if (titulo == "N"){
+            alert(`Faça o seu título eleitoral`)
+        } else {
+            alert(`opção inválida`)
+        }
+
     } else {
         alert(`Você não está apto a votar`)
     }
+
 </script>
